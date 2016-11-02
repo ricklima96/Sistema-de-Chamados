@@ -28,7 +28,7 @@ public class ControleChamadosTest {
     @Test
     public void testAlterarChamado_4args() {
         System.out.println("alterarChamado");
-        Chamado chamado = null;
+        Chamado chamado = new Chamado();
         String status = "teste";
         String causa = "causa válida";
         String solucao = "solução válida";
@@ -85,7 +85,7 @@ public class ControleChamadosTest {
         Chamado chamado = new Chamado();
         Tecnico tecnico = new Tecnico();
         ControleChamados instance = new ControleChamados();
-        RegistroChamado expResult = null;
+        RegistroChamado expResult = new RegistroChamado(assunto, chamado, tec);
         RegistroChamado result = instance.inserirRegistroChamado(assunto, chamado, tec);
         assertEquals(expResult, result);
         fail("Este teste é um protótipo");
