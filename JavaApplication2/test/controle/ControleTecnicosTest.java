@@ -19,18 +19,6 @@ import static org.junit.Assert.*;
  */
 public class ControleTecnicosTest {
     
-
-    @Test
-    public void testInserir() {
-        System.out.println("inserir");
-        long n = 0L;
-        String nome = "NOME TESTE";
-        ControleTecnicos instance = new ControleTecnicos();
-        Tecnico expResult = null;
-        Tecnico result = instance.inserir(n, nome);
-        assertEquals(expResult, result);
-        fail("Este teste é um protótipo.");
-    }
     
     @Test
     public void testCadastrarTecnico() {
