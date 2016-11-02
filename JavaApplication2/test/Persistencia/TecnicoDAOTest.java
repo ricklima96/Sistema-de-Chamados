@@ -26,7 +26,7 @@ public class TecnicoDAOTest {
     @Test
     public void testPut() {
         System.out.println("Teste guardar");
-        Tecnico tecnico = null;
+        Tecnico tecnico = new Tecnico();
         TecnicoDAO instance = new TecnicoDAO();
         instance.put(tecnico);
         fail("Este teste é um protótipo");
@@ -35,9 +35,9 @@ public class TecnicoDAOTest {
     @Test
     public void testGet() {
         System.out.println("Teste obter");
-        Integer codigo = null;
+        Integer codigo = 12;
         TecnicoDAO instance = new TecnicoDAO();
-        Tecnico expResult = null;
+        Tecnico expResult = 12;
         Tecnico result = instance.get(codigo);
         assertEquals(expResult, result);
         fail("Este teste é um protótipo");
