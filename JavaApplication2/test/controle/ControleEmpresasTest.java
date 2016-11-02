@@ -25,7 +25,7 @@ public class ControleEmpresasTest {
         long nmr = 0L;
         String nome = "TEST NAME";
         ControleEmpresas instance = new ControleEmpresas();
-        Empresa expResult = null;
+        Empresa expResult = new Empresa(nmr, nome);
         Empresa result = instance.retorna(nmr, nome);
         assertEquals(expResult, result);
         fail("The test case is a prototype.");
@@ -42,19 +42,7 @@ public class ControleEmpresasTest {
         int result = instance.validar(contrato, nome);
         assertEquals(expResult, result);
         fail("The test case is a prototype.");
-    }
-
-   
-    @Test
-    public void testInserir() {
-        System.out.println("inserir");
-        long n = 0L;
-        String nome = "TEST NAME";
-        ControleEmpresas instance = new ControleEmpresas();
-        Empresa expResult = null;
-        Empresa result = instance.inserir(n, nome);
-        assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+    
     }
     
 }
