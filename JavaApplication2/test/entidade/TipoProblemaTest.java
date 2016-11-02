@@ -18,7 +18,7 @@ public class TipoProblemaTest {
     @Test
     public void testValues() {
         System.out.println("values");
-        TipoProblema[] expResult = null;
+        TipoProblema[] expResult = "";
         TipoProblema[] result = TipoProblema.values();
         assertArrayEquals(expResult, result);
         fail("O caso de teste é um protótipo.");
@@ -28,7 +28,7 @@ public class TipoProblemaTest {
     public void testValueOf() {
         System.out.println("valueOf");
         String nome = "";
-        TipoProblema expResult = null;
+        TipoProblema expResult = "";
         TipoProblema result = TipoProblema.valueOf(nome);
         assertEquals(expResult, result);
         fail("O caso de teste é um protótipo.");
