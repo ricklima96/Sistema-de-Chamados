@@ -38,7 +38,7 @@ public class ChamadoDAOTest {
     @Test
     public void testPut() {
         System.out.println("Teste de put");
-        Chamado chamado = null;
+        Chamado chamado = new Chamado();;
         ChamadoDAO instance = new ChamadoDAO();
         instance.put(chamado);
         fail("Este teste é um protótipo");
