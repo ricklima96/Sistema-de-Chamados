@@ -28,7 +28,7 @@ public class ControleClientesTest {
     public void testGetClienteDAO() {
         System.out.println("getClienteDAO");
         ControleClientes instance = new ControleClientes();
-        ClienteDAO expResult = null;
+        ClienteDAO expResult = new ClienteDAO();
         ClienteDAO result = instance.getClienteDAO();
         assertEquals(expResult, result);
         fail("Este teste é um protótipo");
@@ -45,12 +45,12 @@ public class ControleClientesTest {
     @Test
     public void testIncluiNovoCliente() {
         System.out.println("incluiNovoCliente");
-        Empresa empresa = null;
+        Empresa empresa = new Empresa();
         long cpf = 0L;
         String nome = "CUSTOMER";
         long telefone = 0L;
         ControleClientes instance = new ControleClientes();
-        ClienteEmpresa expResult = null;
+        ClienteEmpresa expResult = new ClienteEmpresa(empresa, cpf, nome, telefone);
         ClienteEmpresa result = instance.incluiNovoCliente(empresa, cpf, nome, telefone);
         assertEquals(expResult, result);
         fail("Este teste é um protótipo");
