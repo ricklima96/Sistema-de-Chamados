@@ -18,7 +18,7 @@ public class TipoConexaoTest {
     @Test
     public void testValues() {
         System.out.println("values");
-        TipoConexao[] expResult = null;
+        TipoConexao[] expResult = "";
         TipoConexao[] result = TipoConexao.values();
         assertArrayEquals(expResult, result);
         fail("O caso de teste é um protótipo.");
@@ -28,7 +28,7 @@ public class TipoConexaoTest {
     public void testValueOf() {
         System.out.println("value Of");
         String nome = "";
-        TipoConexao expResult = null;
+        TipoConexao expResult = "";
         TipoConexao result = TipoConexao.valueOf(nome);
         assertEquals(expResult, result);
         fail("O caso de teste é um protótipo.");
