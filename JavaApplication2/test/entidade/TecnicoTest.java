@@ -15,6 +15,10 @@ import static org.junit.Assert.*;
  */
 public class TecnicoTest {
     
+    public TecnicoTest(){
+        
+    }
+    
     @Test
     public void testToString() {
         System.out.println("to String");

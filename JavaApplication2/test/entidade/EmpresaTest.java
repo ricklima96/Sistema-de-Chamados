@@ -15,11 +15,16 @@ import static org.junit.Assert.*;
  */
 public class EmpresaTest {
 
+    Empresa instance = new Empresa(11885,"Totvs");
+    
+    public EmpresaTest(){
+        
+    }
+    
     @Test
     public void testGetNumeroContrato() {
         System.out.println("get Numero do Contrato");
-        Empresa instance = null;
-        long expResult = 0L;
+        long expResult = 11885;
         long result = instance.getNumeroContrato();
         assertEquals(expResult, result);
         fail();
@@ -28,8 +33,7 @@ public class EmpresaTest {
     @Test
     public void testSetNumeroContrato() {
         System.out.println("set Numero do Contrato");
-        long numeroContrato = 0L;
-        Empresa instance = null;
+        long numeroContrato = 11885;
         instance.setNumeroContrato(numeroContrato);
         fail("O caso de teste é um protótipo.");
     }
@@ -37,8 +41,8 @@ public class EmpresaTest {
     @Test
     public void testGetNomeEmpresa() {
         System.out.println("get Nome da Empresa");
-        Empresa instance = null;
-        String expResult = "";
+
+        String expResult = "Totvs";
         String result = instance.getNomeEmpresa();
         assertEquals(expResult, result);
         fail("O caso de teste é um protótipo.");
@@ -47,8 +51,8 @@ public class EmpresaTest {
     @Test
     public void testSetNomeEmpresa() {
         System.out.println("set Nome da Empresa");
-        String nomeEmpresa = "";
-        Empresa instance = null;
+        String nomeEmpresa = "Totvs";
+        Empresa instance = new Empresa();
         instance.setNomeEmpresa(nomeEmpresa);
         fail("O caso de teste é um protótipo.");
     }
@@ -56,8 +60,8 @@ public class EmpresaTest {
     @Test
     public void testToString() {
         System.out.println("to String");
-        Empresa instance = null;
-        String expResult = "";
+        Empresa instance = new Empresa();
+        String expResult = "Totvs";
         String result = instance.toString();
         assertEquals(expResult, result);
         fail("O caso de teste é um protótipo.");

@@ -22,6 +22,10 @@ public class Empresa implements Serializable {
         this.nomeEmpresa = nomeEmpresa;
     }
 
+    Empresa() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public long getNumeroContrato() {
         return numeroContrato;
     }

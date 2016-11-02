@@ -15,6 +15,10 @@ import static org.junit.Assert.*;
  */
 public class RegistroChamadoTest {
     
+    public RegistroChamadoTest(){
+        
+    }
+    
     @Test
     public void testGetCodigo() {
         System.out.println("get Codigo");

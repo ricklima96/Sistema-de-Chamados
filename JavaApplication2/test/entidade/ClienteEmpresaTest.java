@@ -15,11 +15,18 @@ import static org.junit.Assert.*;
  */
 public class ClienteEmpresaTest {
     
+    Empresa Totvs = new Empresa();
+    ClienteEmpresa instance = new ClienteEmpresa(10,Totvs,448744392-41,"Ricardo",29588736);
+    
+    public ClienteEmpresaTest(){
+
+    }
+    
     @Test
     public void testGetCodigo() {
         System.out.println("get Codigo");
-        ClienteEmpresa instance = null;
-        Integer expResult = null;
+        Empresa Totvs = new Empresa();
+        Integer expResult = 10;
         Integer result = instance.getCodigo();
         assertEquals(expResult, result);
         fail("O caso de teste é um protótipo.");
@@ -28,8 +35,7 @@ public class ClienteEmpresaTest {
     @Test
     public void testSetCodigo() {
         System.out.println("set Codigo");
-        Integer codigo = null;
-        ClienteEmpresa instance = null;
+        Integer codigo = 10;
         instance.setCodigo(codigo);
         fail("O caso de teste é um protótipo.");
     }
@@ -37,8 +43,7 @@ public class ClienteEmpresaTest {
     @Test
     public void testGetCpf() {
         System.out.println("get Cpf");
-        ClienteEmpresa instance = null;
-        long expResult = 0L;
+        long expResult = 448744392-41;
         long result = instance.getCpf();
         assertEquals(expResult, result);
         fail("O caso de teste é um protótipo.");
@@ -47,8 +52,7 @@ public class ClienteEmpresaTest {
     @Test
     public void testSetCpf() {
         System.out.println("set Cpf");
-        long cpf = 0L;
-        ClienteEmpresa instance = null;
+        long cpf = 448744392-41;
         instance.setCpf(cpf);
         fail("O caso de teste é um protótipo.");
     }
@@ -56,7 +60,6 @@ public class ClienteEmpresaTest {
     @Test
     public void testGetEmpresa() {
         System.out.println("get Empresa");
-        ClienteEmpresa instance = null;
         Empresa expResult = null;
         Empresa result = instance.getEmpresa();
         assertEquals(expResult, result);
@@ -66,7 +69,6 @@ public class ClienteEmpresaTest {
     @Test
     public void testToString() {
         System.out.println("to String");
-        ClienteEmpresa instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
