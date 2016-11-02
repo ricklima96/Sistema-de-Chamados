@@ -28,7 +28,7 @@ public class EmpresaDAOTest {
     public void testGetEmpresas() {
         System.out.println("Teste obter empresas");
         EmpresaDAO instance = new EmpresaDAO();
-        Collection<Empresa> expResult = null;
+        Collection<Empresa> expResult = getEmpresas();
         Collection<Empresa> result = instance.getEmpresas();
         assertEquals(expResult, result);
         fail("Este teste é um protótipo");
@@ -38,7 +38,7 @@ public class EmpresaDAOTest {
     public void testVoltaEmpresa() {
         System.out.println("hash map teste, voltar empresas");
         EmpresaDAO instance = new EmpresaDAO();
-        HashMap<Long, Empresa> expResult = null;
+        HashMap<Long, Empresa> expResult = voltaEmpresa();
         HashMap<Long, Empresa> result = instance.voltaEmpresa();
         assertEquals(expResult, result);
         fail("Este teste é um protótipo");
