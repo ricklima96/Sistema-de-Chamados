@@ -27,7 +27,7 @@ public class ControladorPrincipalTest {
         System.out.println("start");
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.start();
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
    
@@ -38,7 +38,7 @@ public class ControladorPrincipalTest {
         ControleEmpresas expResult = null;
         ControleEmpresas result = instance.getCtrEmpresa();
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
   

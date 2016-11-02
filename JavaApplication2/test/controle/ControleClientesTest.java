@@ -31,7 +31,7 @@ public class ControleClientesTest {
         ClienteDAO expResult = null;
         ClienteDAO result = instance.getClienteDAO();
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
     @Test
@@ -39,7 +39,7 @@ public class ControleClientesTest {
         System.out.println("cadastrarCliente");
         ControleClientes instance = new ControleClientes();
         instance.cadastrarCliente();
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
     @Test
@@ -53,7 +53,7 @@ public class ControleClientesTest {
         ClienteEmpresa expResult = null;
         ClienteEmpresa result = instance.incluiNovoCliente(empresa, cpf, nome, telefone);
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
     
 }

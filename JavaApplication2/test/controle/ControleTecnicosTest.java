@@ -29,7 +29,7 @@ public class ControleTecnicosTest {
         Tecnico expResult = null;
         Tecnico result = instance.inserir(n, nome);
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo.");
     }
     
     @Test
@@ -37,7 +37,7 @@ public class ControleTecnicosTest {
         System.out.println("cadastrarTecnico");
         ControleTecnicos instance = new ControleTecnicos();
         instance.cadastrarTecnico();
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
     @Test
@@ -45,7 +45,7 @@ public class ControleTecnicosTest {
         System.out.println("fecharTelaTecnico");
         ControleTecnicos instance = new ControleTecnicos();
         instance.fecharTelaTecnico();
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
     
 }

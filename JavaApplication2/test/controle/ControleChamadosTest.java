@@ -36,7 +36,7 @@ public class ControleChamadosTest {
         Chamado expResult = null;
         Chamado result = instance.alterarChamado(chamado, status, causa, solucao);
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
     
@@ -55,7 +55,7 @@ public class ControleChamadosTest {
         Chamado expResult = null;
         Chamado result = instance.InserirChamadoBancoDeDados(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, bancoDeDados);
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
     
@@ -75,7 +75,7 @@ public class ControleChamadosTest {
         Chamado expResult = null;
         Chamado result = instance.InserirChamadoDesempenho(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, operacao, tempo);
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
     @Test
@@ -88,7 +88,7 @@ public class ControleChamadosTest {
         RegistroChamado expResult = null;
         RegistroChamado result = instance.inserirRegistroChamado(assunto, chamado, tec);
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("Este teste é um protótipo");
     }
 
 }
