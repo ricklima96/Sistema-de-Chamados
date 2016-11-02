@@ -46,8 +46,8 @@ public class ControleChamadosTest {
         String titulo = "título X";
         String descricao = "desc";
         int prioridade = 0;
-        Tecnico tecnico = null;
-        ClienteEmpresa cliente = null;
+        Tecnico tecnico = new Tecnico();
+        ClienteEmpresa cliente = new Cliente();
         String so = "Windows";
         String versaoSO = "8";
         String bancoDeDados = "DB-1";
@@ -65,8 +65,8 @@ public class ControleChamadosTest {
         String titulo = "Título X";
         String descricao = "desc";
         int prioridade = 0;
-        Tecnico tecnico = null;
-        ClienteEmpresa cliente = null;
+        Tecnico tecnico = new Tecnico();
+        ClienteEmpresa cliente = new Cliente();
         String so = "Widows";
         String versaoSO = "8";
         String operacao = "op";
@@ -82,8 +82,8 @@ public class ControleChamadosTest {
     public void testInserirRegistroChamado() {
         System.out.println("inserirRegistroChamado");
         String assunto = "assunto";
-        Chamado chamado = null;
-        Tecnico tec = null;
+        Chamado chamado = new Chamado();
+        Tecnico tecnico = new Tecnico();
         ControleChamados instance = new ControleChamados();
         RegistroChamado expResult = null;
         RegistroChamado result = instance.inserirRegistroChamado(assunto, chamado, tec);
