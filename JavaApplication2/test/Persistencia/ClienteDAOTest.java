@@ -28,7 +28,7 @@ public class ClienteDAOTest {
         System.out.println("Validação de CPF");
         long cpf = 0L;
         ClienteDAO instance = new ClienteDAO();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.validarCPF(cpf);
         assertEquals(expResult, result);
         fail("Este teste é um protótipo");
@@ -49,9 +49,9 @@ public class ClienteDAOTest {
     @Test
     public void testGet() {
         System.out.println("TESTE GET");
-        Long codigoCliente = null;
+        Long codigoCliente = 7;
         ClienteDAO instance = new ClienteDAO();
-        ClienteEmpresa expResult = null;
+        ClienteEmpresa expResult = 7;
         ClienteEmpresa result = instance.get(codigoCliente);
         assertEquals(expResult, result);
         fail("Este teste é um protótipo");
